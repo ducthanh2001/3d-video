@@ -1,0 +1,21 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Python virtual env for the voice / audio scripts (recreate with: python -m venv .venv, then pip install -r requirements.txt)
+.venv/
+__pycache__/
+*.pyc
+
+# Draft or third-party audio: reference clips downloaded only to measure a voice, voice samples, old voice drafts, generated mixes
+voice/reference/
+voice/samples/
+voice/michael/
+voice/ep001_v1/
+voice/voice_raw.wav
+audio/**/*.wav
+*.log
