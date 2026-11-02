@@ -1,0 +1,32 @@
+{
+  "1": [
+    "You're a lawyer in the Middle Ages. Your first client is a pack of rats. Your second is a dead pope.",
+    "You're a lawyer in the Middle Ages. Your first client is a pack of rats. Your second is a dead [pope](/pˈOp/)!",
+    "You're a lawyer in the Middle Ages. Your first client is a pack of rats. Your second... is a dead pope.",
+    "You're a lawyer in the Middle Ages. Your first client is a pack of rats. Your second is a dead Pope."
+  ],
+  "2": [
+    "Case one. France. The rats were summoned to court, and never showed up.",
+    "[Case](/kˈAs/) one! France. The rats were summoned to court, and never showed up.",
+    "... Case one. France. The rats were summoned to court, and never showed up.",
+    "Case, one. France. The rats were summoned to court, and never showed up."
+  ],
+  "5": [
+    "He gives the rats extra time. Round one goes to Milo.",
+    "[He](/hˈi/) gives the rats extra time. Round one goes to Milo.",
+    "... He gives the rats extra time. Round one goes to Milo.",
+    "He... gives the rats extra time. Round one goes to Milo."
+  ],
+  "8": [
+    "Case two. Rome, 897. Your client has been dead for nine months.",
+    "[Case](/kˈAs/) two! Rome, 897. Your client has been dead for nine months.",
+    "... Case two. Rome, 897. Your client has been dead for nine months.",
+    "Case, two. Rome, 897. Your client has been dead for nine months."
+  ],
+  "15": [
+    "The year after, another pope banned putting corpses on trial.",
+    "[The](/ðˈi/) year after, another pope banned putting corpses on trial.",
+    "... The year after, another pope banned putting corpses on trial.",
+    "[The](/ðˈə/) year after, another pope banned putting corpses on trial."
+  ]
+}

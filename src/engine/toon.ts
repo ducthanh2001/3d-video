@@ -407,6 +407,19 @@ const hatOn = (p: Pen, o: Outfit, hp: P2[], H: Blob, cx: number, hc: number, lig
     const x0 = Math.min(...arc.map((q) => q[0])), x1 = Math.max(...arc.map((q) => q[0])), yr = cutY - 3 * u;
     p.stroke([[x0, yr], [x1, yr]], 6 * u, mul(col, [0.7, 0.7, 0.76]));
     p.band(side ? [[cx + 40 * u, yr], [cx + 40 * u, yr + 0.34 * HH]] : [[cx, yr], [cx, yr + 0.36 * HH]], mul(col, [0.82, 0.82, 0.88]), 7 * u, 1.5 * u);
+  } else if (o.hat === "mitre") {
+    // bishop's / pope's mitre: tall two-peaked cap in o.cap with gold bands (o.buttons)
+    const col = o.cap ?? "#f4efe2", trim = o.buttons ?? "#d9b84a", yb = crown + 0.2 * HH, ht = 0.92 * HH, wb = 0.36 * W;
+    const ox = side ? 8 * u : 0;
+    const body = R([[cx + ox - wb, yb + 2 * u], [cx + ox - wb * 1.08, yb - 0.38 * ht], [cx + ox - wb * 0.55, yb - 0.78 * ht], [cx + ox, yb - ht],
+      [cx + ox + wb * 0.55, yb - 0.78 * ht], [cx + ox + wb * 1.08, yb - 0.38 * ht], [cx + ox + wb, yb + 2 * u]]);
+    p.shadedFill(body, col, mul(col, SH_FELT), light, wb, 0.4);
+    p.clip(body, () => {
+      p.band(R([[cx + ox - wb * 1.2, yb - 0.07 * HH], [cx + ox + wb * 1.2, yb - 0.07 * HH]]), trim, 0.12 * HH, 1.2 * u);
+      p.band(R([[cx + ox, yb], [cx + ox, yb - ht]]), trim, 0.1 * HH, 1.2 * u);
+    });
+    p.poly(body, null, ow);
+    p.stroke(R([[cx + ox - wb * 0.3, yb - 0.8 * ht], [cx + ox, yb - 0.62 * ht], [cx + ox + wb * 0.3, yb - 0.8 * ht]]), 2 * u);
   } else if (o.hat === "baseball") {
     // modern baseball cap: puffed crown with panel seams and a button, a curved brim that shades the forehead
     const col = o.cap!, cutY = crown + 0.17 * HH, n = hp.length, keepY = (y: number) => y < cutY;
