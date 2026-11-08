@@ -38,7 +38,7 @@ const facade = (kind: number) => ctex(`e1_facade${kind}`, 512, 384, (g) => {
   g.fillStyle = "#c9a35a"; g.beginPath(); g.arc(280, 310, 5, 0, 7); g.fill();
 });
 
-const house = (b: Batch, cx: number, cz: number, yaw: number, w: number, d: number, h: number, kind: number) => {
+export const house = (b: Batch, cx: number, cz: number, yaw: number, w: number, d: number, h: number, kind: number) => {
   const M = new THREE.Matrix4().compose(V(cx, 0, cz), new THREE.Quaternion().setFromEuler(new THREE.Euler(0, yaw, 0)), V(1, 1, 1));
   const plaster = mat("plaster", "#e8dcc2"), roof = mat(`roof${kind % 2}`, kind % 2 ? "#7a4a32" : "#a8864a"), rh = 0.5 * w * 0.55;
   const front = lam(`e1_facadeM${kind % 3}`, () => ({ map: facade(kind) }));

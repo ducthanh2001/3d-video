@@ -1,0 +1,100 @@
+[
+ {
+  "frame": 12,
+  "seconds": 0.4,
+  "sfx": "soft footstep",
+  "foot": "L",
+  "tile": 1
+ },
+ {
+  "frame": 27,
+  "seconds": 0.9,
+  "sfx": "soft footstep",
+  "foot": "R",
+  "tile": 2
+ },
+ {
+  "frame": 42,
+  "seconds": 1.4,
+  "sfx": "soft footstep",
+  "foot": "L",
+  "tile": 3
+ },
+ {
+  "frame": 57,
+  "seconds": 1.9,
+  "sfx": "soft footstep",
+  "foot": "R",
+  "tile": 4
+ },
+ {
+  "frame": 72,
+  "seconds": 2.4,
+  "sfx": "toe catch (scuff + thud)",
+  "foot": "L",
+  "tile": 5
+ },
+ {
+  "frame": 75,
+  "seconds": 2.5,
+  "sfx": "breath in (gasp)",
+  "foot": "-",
+  "tile": 0
+ },
+ {
+  "frame": 86,
+  "seconds": 2.867,
+  "sfx": "heavy catch step",
+  "foot": "R",
+  "tile": 6
+ },
+ {
+  "frame": 111,
+  "seconds": 3.7,
+  "sfx": "soft footstep",
+  "foot": "L",
+  "tile": 7
+ },
+ {
+  "frame": 126,
+  "seconds": 4.2,
+  "sfx": "soft footstep",
+  "foot": "R",
+  "tile": 8
+ },
+ {
+  "frame": 141,
+  "seconds": 4.7,
+  "sfx": "soft footstep",
+  "foot": "L",
+  "tile": 9
+ },
+ {
+  "frame": 156,
+  "seconds": 5.2,
+  "sfx": "soft footstep",
+  "foot": "R",
+  "tile": 10
+ },
+ {
+  "frame": 156,
+  "seconds": 5.2,
+  "sfx": "door slit hum starts",
+  "foot": "-",
+  "tile": 11
+ },
+ {
+  "frame": 171,
+  "seconds": 5.7,
+  "sfx": "soft footstep",
+  "foot": "L",
+  "tile": 11
+ },
+ {
+  "frame": 171,
+  "seconds": 5.7,
+  "sfx": "door opens: warm swell",
+  "foot": "-",
+  "tile": 11
+ }
+]

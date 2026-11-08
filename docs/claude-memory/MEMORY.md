@@ -1,0 +1,10 @@
+- [Stick-film kit](stick-film-kit.md) — video-ai/src/kit: characters/props/animals/camera kit for @SimplyAnimatedVisuals-style shorts
+- [Competitor format](competitor-format.md) — top shorts = 5 minimal label-pair vignettes, black bg, meaning-only colour; list of their used ideas
+- [Competitor visual grammar](competitor-visual-grammar.md) — frame-by-frame study of how they draw: words on objects, machines, 3 rows, new drawing system per vignette
+- [Style: B&W dominant + meaningful accents](style-bw-one-accent.md) — B&W rooms/figures, gold = success; red/green/phone-blue only as meaning; no all-over colour palette
+- [Channel results](channel-results.md) — SAME HOURS hit 16k / 70% retention; competitor theme medians (prove-them best)
+- [No PowerShell Set-Content edits](no-powershell-set-content-edits.md) — PS 5.1 corrupts UTF-8 + adds BOM; use Edit/Write or .NET UTF8 (no BOM)
+- [Action with object](action-with-object.md) — every frame: big figure acting ON a big real object, payoff shown while acting; no magic transformations
+- [Competitor outgrow](competitor-outgrow.md) — small rival's 81k hit: figure labelled YOU in a spotlight + monologue captions with one red keyword
+- [Competitor top-4 breakdown](competitor-top4-breakdown.md) — every vignette of the 25M/9.7M/6.4M/219k hits: labelled pair doing the same physical task, easy option first, cost later
+- [Realistic objects](realistic-objects.md) — every frame: real-scale, real-detail objects + correct physics + visible effort; no icon/abstract objects

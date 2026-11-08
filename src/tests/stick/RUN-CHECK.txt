@@ -1,0 +1,8 @@
+Numeric motion check of the stick-figure test (bone lengths, planted feet, IK reach, joint jumps, contact table). It also writes sfx-cues.json.
+`tsx` is not installed in this project, so the TypeScript is bundled with esbuild (already a dependency of Remotion) and run with node:
+
+  npx esbuild src/tests/stick/check-motion.ts --bundle --platform=node --format=esm --outfile=<any folder>/check-motion.mjs
+  node <any folder>/check-motion.mjs        (run it from the project root: it writes src/tests/stick/sfx-cues.json)
+
+Stills:  node scripts/stills.mjs StickTest out/stick/stick-f 0,12,27,72,78,86,95,111,156,171 0.5
+Video:   npx remotion render src/index.ts StickTest out/stick/stick-test.mp4 --codec h264 --crf 18 --gl=angle --muted --scale=0.5

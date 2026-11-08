@@ -1,0 +1,47 @@
+[
+ {
+  "frame": 0,
+  "seconds": 0,
+  "sfx": "truck engine loop (diesel, steady)"
+ },
+ {
+  "frame": 70,
+  "seconds": 2.333,
+  "sfx": "distant rising whoosh starts"
+ },
+ {
+  "frame": 98,
+  "seconds": 3.267,
+  "sfx": "engine dips, driver gasp"
+ },
+ {
+  "frame": 130,
+  "seconds": 4.333,
+  "sfx": "meteor roar peaks"
+ },
+ {
+  "frame": 132,
+  "seconds": 4.4,
+  "sfx": "IMPACT: explosion boom + shockwave (music and engine cut for 0.3 s)"
+ },
+ {
+  "frame": 142,
+  "seconds": 4.733,
+  "sfx": "debris rain / metal clatter"
+ },
+ {
+  "frame": 167,
+  "seconds": 5.567,
+  "sfx": "body thump + slide"
+ },
+ {
+  "frame": 185,
+  "seconds": 6.167,
+  "sfx": "ringing ears (high tone fades), fire crackle loop begins"
+ },
+ {
+  "frame": 190,
+  "seconds": 6.333,
+  "sfx": "groan"
+ }
+]
