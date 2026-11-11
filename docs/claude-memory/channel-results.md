@@ -39,6 +39,24 @@ that needs decoding. SAME HOURS opened on a LITERAL everyday contrast (Scrolling
 Rule now: the hook frame must be literal and relatable (phone, bed, sofa, alarm, food…) with plain lane labels; metaphors only
 from the 2nd vignette on, once the viewer is in.
 
+"YOU'RE CLOSER THAN YOU THINK. DON'T QUIT." (TRUST, src/episodes/trust, 40.6 s, posted 2026-11-09): 2,346 views in 24 h,
+the feed stopped pushing at ~13 h; stayed-to-watch 62.3% / swiped 37.7%; avg view 0:27 (≈66% of 40.6 s); +2 subs; 96% Shorts feed.
+Better than PROVE/LAUGH, far from SAME HOURS. Diagnosis: too long (40.6 s vs their 31–36), ONE story frame (mountain) with
+7-s chapters whose payoff arrives late (the answer at 34 s), dark frame 0 with small figures, punch lines only at the END of
+each scene (theirs: a one-line statement header on screen from the vignette's first frame), nothing for the viewer to project
+on (no YOU) and no series identity → almost no subs.
+
+"DO IT UNTIL IT'S DONE." (src/episodes/done, 33 s, posted 2026-11-10, the best animation/acting so far: KO → ◀◀ snooze/5 AM
+lanes → shields in an arrow storm → hurdles fall-and-finish → tall climbing wall → trophy) FLOPPED: ~24 h, 254 engaged views,
+stayed-to-watch 35.2% / swiped 64.8% (worst yet), avg view 0:19. Lesson: better acting does not save a weak frame 0. Frame 0 was a
+wide, busy arena (crowd, three small figures, a small "WHAT THEY SEE." header) with NO labelled contrast and no open question;
+the ◀◀ "4 years earlier" needs decoding. The two hooks that worked (SAME HOURS 70%, TRUST 62%) both opened on big labelled
+figures doing a literal everyday task. Rule reinforced: frame 0 = two plain labels + big figures + one literal action, readable
+at thumbnail size in 1 s; spectacle (arenas, battles) only after the hook.
+
 **Why:** the user wants each next episode to grow views; this is the proven recipe.
 **How to apply:** keep the SAME HOURS format (5 two-lane vignettes, ~33 s, one camera reveal, gold payoff at the end); prefer
 high-median themes; see [[competitor-format]] for ideas already used and [[stick-film-kit]] for the toolkit.
+
+2026-11-12: WORK SMART (lever/escalator/paint/maze/dominoes) 61.4% stayed, avg 0:24 of 0:34, ~1.1k views in 22 h (~2k later).
+Retention after the first second is fine; the gap to SAME HOURS (70% stayed, 16k) is the first second, so fix frame 0 + title.

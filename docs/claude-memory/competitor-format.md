@@ -44,5 +44,17 @@ Also already used by them: crowd throwing stones → he builds a castle ("Let Th
 castle overlapped it unknowingly), one brick a day house 1→365, people see / don't see stairs, motivation vs discipline race,
 pleasing everyone (balloons), hard work vs smart work cart, missed truck that explodes (trust the timing), fish back to the sea.
 
+Re-scan 2026-11-09 (5 newest hits studied: "Brick by brick" 9M, "I Have to Win vs I Need to Win" 5.6M, "Choose people who lift
+you up" 2.1M, "Overthink won't solve anything" 1.6M, "Success is earned, never given" 1.5M; frames in out/_ref/new1109, private):
+all 33–36 s, 5–6 vignettes of 5–6 s, most are RECYCLED from their older hits (castle from stones, Quitting/Consistency digging
+to a gold wall, goat DAY counter, balloons please everyone, boss/leader, today/month/year boulder, seesaw lift-you-up wall,
+comparison bike→car→boat→plane). New ideas seen: pointing hands labelled THE PAST/FAMILY/EXPECTATIONS (overthinking), alarm-clock
+bed overthinking, MONEY vs KNOWLEDGE (money pile vs climbing a wall of books), LUXURY FIRST vs ASSETS FIRST (car vs house earning
+money), 99% vs 1% stairs, 99 bad ideas → 1 great idea (paper wall becomes a light bulb), "The luck" archery (hidden thousands of
+missed arrows), YOUR PAST pulling a rope, A CROWD IS NOT A DIRECTION, NUMBERS DON'T ALWAYS WIN (seesaw), HARD WORK vs SMART WORK
+cart, LEARNING vs NOT LEARNING FROM MISTAKES (nails), motivation/discipline stadium race. Grammar: a ONE-LINE STATEMENT header
+at the top from the vignette's first frame (caps, small) instead of an end punch line; big bright subjects or a dense crowd at
+frame 0; money themes (assets, knowledge) are new for them and suit a US audience.
+
 **Why:** the user rejected textured/coloured scenes and single-story scripts ("chưa đủ hấp dẫn", "hình ảnh không phù hợp").
 **How to apply:** pitch original vignette pairs in this minimal format before building anything; see [[stick-film-kit]].

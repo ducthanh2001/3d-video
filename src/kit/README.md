@@ -37,6 +37,8 @@ Coordinates are world px. The camera puts world point (x, y) at the frame centre
 | `crowd.tsx` | `<Crowd rows cols vp cheer>` (perspective block of hundreds of people, seeded cheering), `<Stands>` (thousands of stadium fans, flashes, banners), `<Group>` (n heroes in formation) |
 | `fx.tsx` | `<Particles>` + presets Money, Coins, Debris, Sparks, Dust, Confetti, Shards; Rays, Glow, SpeedLines, ImpactRing, Sparkle, Crack (`p` 0→1), Motes |
 | `camera.tsx` | `<Cam keys kicks drift blur state>`: automatic motion blur from camera speed, decaying shake kicks, hand-held drift. `<Parallax d>`, `<Screen>`. Recipes: `zoomInto`, `whip`, `follow(path)`. Transitions: `<Flash>`, `<Dip>`, `<XFade>`, `rewindTime()` + `<RewindFx>` (VHS rewind) |
+| `motion.ts` | anti-stiffness helpers (rules in `.claude/skills/shorts-craft/`): `inertia` camera easing, `spring`/`springF` + `SPRING` presets, `anticipate`, `stagger`, `arc`, `lagged` (follow-through), `startFor` (land on the beat), `WEIGHT`, `stepped` (move-rest-move effort) |
+| `acting.ts` | emotion poses `EMOTE.*` (handsOnHead, handsOnKnees, faceInHands, slump, rubNeck, deskCollapse, flatBack, flatFront, pushUp, oneKnee, resolve, shieldUp, trudge, fistPump, armsWide, kneeSlide, lookUp), `act()` pose-to-pose with holds, `smearFrames()`; sheet: `ActingSheet` |
 
 ## Rules that keep it smooth
 - Drive cycles from **distance**, not time (`phase = distance / perTurn`), or the feet slide.

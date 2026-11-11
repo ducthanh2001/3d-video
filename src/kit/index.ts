@@ -8,3 +8,5 @@ export * from "./animals";
 export * from "./crowd";
 export * from "./fx";
 export * from "./camera";
+export * from "./motion";
+export * from "./acting";

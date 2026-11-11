@@ -8,3 +8,10 @@
 - [Competitor outgrow](competitor-outgrow.md) — small rival's 81k hit: figure labelled YOU in a spotlight + monologue captions with one red keyword
 - [Competitor top-4 breakdown](competitor-top4-breakdown.md) — every vignette of the 25M/9.7M/6.4M/219k hits: labelled pair doing the same physical task, easy option first, cost later
 - [Realistic objects](realistic-objects.md) — every frame: real-scale, real-detail objects + correct physics + visible effort; no icon/abstract objects
+- [shorts-craft skill](shorts-craft-skill.md) — video-ai/.claude/skills/shorts-craft: camera/motion/anti-AI writing rules (from cinecode, MIT) + src/kit/motion.ts; read before scripting or animating
+- [Competitor hooks](competitor-hooks.md) — 176-short ranking + frame-0 study: top hooks are minimal black, 2 big labelled figures, a surprising contrast, progress moving by 2 s
+- [No detailed faces](no-detailed-faces.md) — no eyes/mouths on figures; emotion = heavy body action + sweat
+- [script-expert skill](script-expert-skill.md) — video-ai/.claude/skills/script-expert: write+review scripts (SUCCESs, STEPPS, anti-AI tells; stop-slop/humanizer/wondelai MIT)
+- [Episode: Pressure makes diamonds](episode-pressure-diamonds.md) — approved 2-lane film (penalty/coal/exam/anvil/interview), files, next: thumbnail + parts
+- [Object scene rules](object-scene-rules.md) — object-only scenes must show the title's transformation, readable in B&W, clever; rejected list
+- [Scene drawing lessons](scene-drawing-lessons.md) — football pitch like EQhrPwTjhBI, exam room side view, stress vs focus, self-review + keep only latest stills

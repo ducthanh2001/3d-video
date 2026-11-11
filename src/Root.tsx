@@ -49,6 +49,17 @@ import { TrustFrames, TRUST_FRAMES } from "./episodes/trust/Frames";
 import { TrustV4Frames, TRUST4_FRAMES } from "./episodes/trust/V4Frames";
 import { TrustFilm, TRUST_FILM_FRAMES } from "./episodes/trust/Film";
 import { TrustThumb, TRUST_THUMBS } from "./episodes/trust/Thumb";
+import { QuietlyFrames, QUIETLY_FRAMES } from "./episodes/quietly/Frames";
+import { ActingSheet } from "./kit/demo/ActingSheet";
+import { DoneFrames, DONE_FRAMES } from "./episodes/done/Frames";
+import { DoneFilm, DONE_FILM_FRAMES } from "./episodes/done/Film";
+import { DoneThumb, DONE_THUMBS } from "./episodes/done/Thumb";
+import { SmartFilm, SMART_FRAMES } from "./episodes/smart/Film";
+import { SmartThumb, SMART_THUMBS } from "./episodes/smart/Thumb";
+import { PressureFrames, PRESSURE_FRAMES } from "./episodes/pressure/Frames";
+import { Pressure2Frames, PRESSURE2_FRAMES } from "./episodes/pressure/Frames2";
+import { Pressure3Frames, PRESSURE3_FRAMES } from "./episodes/pressure/Frames3";
+import { PressureFilm, PRESSURE_FILM_FRAMES } from "./episodes/pressure/Film";
 import { UsaFrames, USA_FRAMES } from "./episodes/usa/Frames";
 import { PaydayBoard, PAYDAY_KEYS } from "./episodes/payday/Board";
 import { PaydayFilm, PAYDAY_FRAMES } from "./episodes/payday/Film";
@@ -83,6 +94,17 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="TrustV4Frames" component={TrustV4Frames} durationInFrames={TRUST4_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="TrustFilm" component={TrustFilm} durationInFrames={TRUST_FILM_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="TrustThumb" component={TrustThumb} durationInFrames={TRUST_THUMBS} fps={30} width={1080} height={1920} />
+      <Composition id="QuietlyFrames" component={QuietlyFrames} durationInFrames={QUIETLY_FRAMES} fps={30} width={1080} height={1920} />
+      <Composition id="ActingSheet" component={ActingSheet} durationInFrames={1} fps={30} width={1080} height={1920} />
+      <Composition id="DoneFrames" component={DoneFrames} durationInFrames={DONE_FRAMES} fps={30} width={1080} height={1920} />
+      <Composition id="DoneFilm" component={DoneFilm} durationInFrames={DONE_FILM_FRAMES} fps={30} width={1080} height={1920} />
+      <Composition id="DoneThumb" component={DoneThumb} durationInFrames={DONE_THUMBS} fps={30} width={1080} height={1920} />
+      <Composition id="SmartFilm" component={SmartFilm} durationInFrames={SMART_FRAMES} fps={30} width={1080} height={1920} />
+      <Composition id="SmartThumb" component={SmartThumb} durationInFrames={SMART_THUMBS} fps={30} width={1080} height={1920} />
+      <Composition id="PressureFrames" component={PressureFrames} durationInFrames={PRESSURE_FRAMES} fps={30} width={1080} height={1920} />
+      <Composition id="Pressure2Frames" component={Pressure2Frames} durationInFrames={PRESSURE2_FRAMES} fps={30} width={1080} height={1920} />
+      <Composition id="Pressure3Frames" component={Pressure3Frames} durationInFrames={PRESSURE3_FRAMES} fps={30} width={1080} height={1920} />
+      <Composition id="PressureFilm" component={PressureFilm} durationInFrames={PRESSURE_FILM_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="TrustFrames" component={TrustFrames} durationInFrames={TRUST_FRAMES} fps={30} width={1080} height={1920} />
       <Composition id="ProveThumb" component={ProveThumb} durationInFrames={PROVE_THUMBS} fps={30} width={1080} height={1920} />
       <Composition id="ProveFilm" component={ProveFilm} durationInFrames={PROVE_FILM_FRAMES} fps={30} width={1080} height={1920} />

@@ -159,7 +159,60 @@ const eyes = (j: Joints, L: HeroLook) => {
   ));
 };
 
+/** a facial expression drawn on the facing half of the head (side view): eyes, a brow, a mouth. Use only at the beats that need it. */
+export type Face = "calm" | "smile" | "happy" | "strain" | "shock" | "sad" | "worried" | "focus";
+const FaceMarks: React.FC<{ j: Joints; R: number; face: Face; ink: string }> = ({ j, R, face, ink }) => {
+  const dx = j.head[0] - j.neck[0], dy = j.head[1] - j.neck[1];
+  const ang = (Math.atan2(dy, dx) * 180) / Math.PI + 90; // local frame: +x = facing direction, +y = down the face
+  const r = R, sw = r * 0.11;
+  const eye = (cx: number, cy: number, k: number) => <ellipse cx={cx * r} cy={cy * r} rx={r * 0.12 * k} ry={r * 0.16 * k} fill={ink} />;
+  const line = (d: string, w = sw) => <path d={d} fill="none" stroke={ink} strokeWidth={w} strokeLinecap="round" strokeLinejoin="round" />;
+  const p = (x: number, y: number) => `${(x * r).toFixed(1)} ${(y * r).toFixed(1)}`;
+  const parts: React.ReactNode[] = [];
+  const E1 = 0.3, E2 = 0.7, EY = -0.12;
+  switch (face) {
+    case "calm":
+      parts.push(eye(E1, EY, 1), eye(E2, EY, 1), line(`M${p(0.45, 0.42)} Q${p(0.62, 0.5)} ${p(0.8, 0.4)}`));
+      break;
+    case "smile":
+      parts.push(eye(E1, EY, 1), eye(E2, EY, 1), line(`M${p(0.38, 0.36)} Q${p(0.62, 0.62)} ${p(0.86, 0.32)}`));
+      break;
+    case "happy": // closed happy eyes + open smile
+      parts.push(line(`M${p(E1 - 0.12, EY + 0.04)} Q${p(E1, EY - 0.14)} ${p(E1 + 0.12, EY + 0.04)}`), line(`M${p(E2 - 0.12, EY + 0.04)} Q${p(E2, EY - 0.14)} ${p(E2 + 0.12, EY + 0.04)}`));
+      parts.push(<path d={`M${p(0.34, 0.3)} Q${p(0.62, 0.74)} ${p(0.9, 0.26)} Z`} fill={ink} />);
+      break;
+    case "strain": // squeezed eyes, brows down, gritted teeth
+      parts.push(line(`M${p(E1 - 0.13, EY - 0.08)} L${p(E1 + 0.12, EY + 0.02)}`), line(`M${p(E2 - 0.12, EY + 0.02)} L${p(E2 + 0.13, EY - 0.08)}`));
+      parts.push(line(`M${p(E1 - 0.14, EY - 0.3)} L${p(E1 + 0.14, EY - 0.2)}`, sw * 1.1), line(`M${p(E2 - 0.14, EY - 0.2)} L${p(E2 + 0.14, EY - 0.3)}`, sw * 1.1));
+      parts.push(<rect x={0.38 * r} y={0.3 * r} width={0.46 * r} height={0.2 * r} rx={0.05 * r} fill="#f4f4f4" stroke={ink} strokeWidth={sw * 0.8} />, line(`M${p(0.61, 0.3)} L${p(0.61, 0.5)}`, sw * 0.6));
+      break;
+    case "shock": // wide eyes, brows up, open O mouth
+      for (const e of [E1, E2]) parts.push(<circle cx={e * r} cy={EY * r} r={r * 0.17} fill="#fff" stroke={ink} strokeWidth={sw * 0.8} />, <circle cx={e * r} cy={EY * r} r={r * 0.07} fill={ink} />);
+      parts.push(line(`M${p(E1 - 0.14, EY - 0.34)} Q${p(E1, EY - 0.44)} ${p(E1 + 0.14, EY - 0.36)}`), line(`M${p(E2 - 0.14, EY - 0.36)} Q${p(E2, EY - 0.44)} ${p(E2 + 0.14, EY - 0.34)}`));
+      parts.push(<ellipse cx={0.6 * r} cy={0.46 * r} rx={0.13 * r} ry={0.18 * r} fill={ink} />);
+      break;
+    case "sad":
+      parts.push(eye(E1, EY + 0.04, 0.9), eye(E2, EY + 0.04, 0.9));
+      parts.push(line(`M${p(E1 - 0.14, EY - 0.22)} L${p(E1 + 0.12, EY - 0.3)}`), line(`M${p(E2 - 0.12, EY - 0.3)} L${p(E2 + 0.14, EY - 0.22)}`));
+      parts.push(line(`M${p(0.42, 0.5)} Q${p(0.62, 0.34)} ${p(0.82, 0.5)}`));
+      break;
+    case "worried":
+      parts.push(eye(E1, EY, 1), eye(E2, EY, 1));
+      parts.push(line(`M${p(E1 - 0.14, EY - 0.24)} L${p(E1 + 0.12, EY - 0.32)}`), line(`M${p(E2 - 0.12, EY - 0.32)} L${p(E2 + 0.14, EY - 0.24)}`));
+      parts.push(line(`M${p(0.44, 0.44)} Q${p(0.53, 0.38)} ${p(0.62, 0.44)} Q${p(0.71, 0.5)} ${p(0.8, 0.44)}`));
+      break;
+    case "focus": // calm, brows slightly down, flat mouth
+      parts.push(eye(E1, EY, 0.9), eye(E2, EY, 0.9));
+      parts.push(line(`M${p(E1 - 0.13, EY - 0.27)} L${p(E1 + 0.13, EY - 0.22)}`), line(`M${p(E2 - 0.13, EY - 0.22)} L${p(E2 + 0.13, EY - 0.27)}`));
+      parts.push(line(`M${p(0.48, 0.44)} L${p(0.76, 0.44)}`));
+      break;
+  }
+  return <g transform={`translate(${j.head[0]} ${j.head[1]}) rotate(${ang})`}>{parts.map((n, i) => <React.Fragment key={i}>{n}</React.Fragment>)}</g>;
+};
+
 export type HeroProps = {
+  /** a facial expression (side view) */
+  face?: Face;
   x: number; y: number; // where the root is on screen
   pose: Pose;
   s?: number; // scale
@@ -174,7 +227,7 @@ export type HeroProps = {
   opacity?: number;
 };
 
-export const Hero: React.FC<HeroProps> = ({ x, y, pose, s = 1, flip, look = LOOK_WHITE, hold, behind, shadow = 0.35, rot = 0, opacity = 1 }) => {
+export const Hero: React.FC<HeroProps> = ({ x, y, pose, s = 1, flip, look = LOOK_WHITE, hold, behind, shadow = 0.35, rot = 0, opacity = 1, face }) => {
   const id = React.useId().replace(/:/g, "");
   const j = solvePose(pose);
   const L = { ...LOOK_WHITE, ...look };
@@ -189,7 +242,8 @@ export const Hero: React.FC<HeroProps> = ({ x, y, pose, s = 1, flip, look = LOOK
         <Limb pts={[j.sh, j.eF, j.wF]} w={ww * 0.9} ink={k} fill={far} ol={ol} />
         <Limb pts={[j.hip, j.sh, j.neck]} w={ww * 1.06} ink={k} fill={near} ol={ol} />
         <circle cx={j.head[0]} cy={j.head[1]} r={BONE.head * (L.head ?? 1) + (glowPass ? 6 : 0)} fill={glowPass ? near : `url(#${shade})`} stroke={k} strokeWidth={ol} />
-        {!glowPass && L.eyes && eyes(j, L)}
+        {!glowPass && L.eyes && !face && eyes(j, L)}
+        {!glowPass && face && <FaceMarks j={j} R={BONE.head * (L.head ?? 1)} face={face} ink={ink} />}
         <Limb pts={[j.hip, j.kN, j.aN]} w={ww} ink={k} fill={near} ol={ol} />
         <Limb pts={[j.sh, j.eN, j.wN]} w={ww * 0.94} ink={k} fill={near} ol={ol} />
       </g>
